@@ -4,3 +4,6 @@ What makes this project unique is, that I have used the model to decipher my own
 Testing the Model:
 Display the figure in position 1511 of the test data set:
 <img src = https://github.com/i002900/MNIST/blob/main/Figure%201511.png>
+
+Also print the predicted value in position 1511.
+You will see the predicted value is also 4.
