@@ -29,3 +29,16 @@ accuracy_kNN = accuracy_score(y_neigh, test_labels)
 print(f"The accuracy using kNN with 3 neighbors is: {accuracy_kNN}")
 
 ## The observed accuracy is 97.05%
+## Let us now check out the result for some arbitrary figure in position 1511 of the test data set
+# Captute the normalized data in position 1511
+digit = X_test[1511]
+## Remember this is a single dimension of type [784,]. Let us reshape it back to 28 , 28 as follows
+digit_28 = digit.reshape(28 , 28)
+## display the above
+import matplotlib.pyplot as plt
+plt.imshow(digit_28 , cmap = plt.cm.binary)
+## You will see the figure 4. Now show the predicted value at position 1511
+print(y_neigh[1511])
+## This will also show 4!
+
+
